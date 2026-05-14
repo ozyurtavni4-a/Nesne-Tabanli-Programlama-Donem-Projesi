@@ -20,9 +20,9 @@ cursor.execute("SELECT COUNT(*) FROM egitmenler")
 if cursor.fetchone()[0] == 0:
     cursor.execute("INSERT INTO egitmenler VALUES ('E01', 'Erdem Yücesan', 'Nesne Tabanlı Programlama')")
     cursor.execute("INSERT INTO egitmenler VALUES ('E02', 'Muharrem Altunışık', 'Veritabanı (SQL)')")
-    cursor.execute("INSERT INTO ogrenciler VALUES ('O101', 'Avni Özyurt', 'avniozyurt@gmail.com')")
-    cursor.execute("INSERT INTO ogrenciler VALUES ('O102', 'Umut Kuruel', 'umutkuruel@gmail.com')")
-    cursor.execute("INSERT INTO kurslar VALUES ('K50', 'Python ile Nesne Tabanlı Programlama', 'Erdem Hoca', 100)")
+    cursor.execute("INSERT INTO ogrenciler VALUES ('O1', 'Avni Özyurt', 'avniozyurt@gmail.com')")
+    cursor.execute("INSERT INTO ogrenciler VALUES ('O2', 'Umut Kuruel', 'umutkuruel@gmail.com')")
+    cursor.execute("INSERT INTO kurslar VALUES ('K1', 'Python ile Nesne Tabanlı Programlama', 'Erdem Hoca', 100)")
     conn.commit()
 
 # === 2. OOP SINIFLARI ===
@@ -122,7 +122,7 @@ def kayit_yap_gui():
     else:
         messagebox.showerror("Hata", "Bulunamadı.", parent=pencere)
 
-# BURASI ARTIK ID GÖSTERİYOR
+#  ID GÖSTERİYOR
 def egitmenleri_listele_gui():
     verileri_tazele()
     if not egitmenler:
