@@ -210,7 +210,7 @@ def buton_olustur(h, y, k, r="#2f3640", yr="white"):
 buton_olustur(f_ekle, "Yeni Kitap Ekle", kitap_ekle_gui)
 buton_olustur(f_ekle, "Yeni Üye Kaydı", uye_ekle_gui)
 buton_olustur(f_ekle, "Kitap Ödünç Ver", odunc_ver_gui, "#3498db")
-buton_olustur(f_ekle, "Kitap İade Al", iade_al_gui, "#e67e22") # Turuncu renkli İADE butonu eklendi
+buton_olustur(f_ekle, "Kitap İade Al", iade_al_gui, "#e67e22") 
 
 # 2. SÜTUN
 buton_olustur(f_list, "Tüm Kitapları Gör", kitaplari_listele_gui)
